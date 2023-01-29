@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PrimulaBakery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/bakery\ background.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">PRIMULA<br>BAKERY</span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div id="menu" class="w3-container w3-black w3-padding-64 w3-xxlarge">
+  <class="w3-content">
+
+    <h1 class="w3-center w3-grey w3-round-xxlarge" style="margin-bottom:64px; font-size: 60px;">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'CAKES');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">CAKES</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'TARTS & PUFF');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">TARTS & PUFF</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'BAKERY');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">BAKERY</div>
+      </a>
+    </div>
+  </div>
+
+    <div id="CAKES" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>BLACK FOREST</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM 50.00</span></h1>
+        <center><img src="images/cake 1.png" width="210px" height="210px"></center>
+        
+        <hr>
+        <h1><b>MANGO CAKE</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM 50.00</span></h1>
+        <center><img src="images/cake 3.jpg" width="220px" height="220px"></center>
+        
+        <hr>
+        <h1><b>CHOCOLATE CHEESE LAYER</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM 55.00</span></h1>
+        <center><img src="images/cake 4.jpg" width="210px" height="210px"></center>
+        
+        <hr>
+        <h1><b>BLUEBERRY CHEESE CAKE</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM 55.00</span></h1>
+        <center><img src="images/cake 5.png" width="210px" height="210px"></center>
+        
+        <hr>
+        <h1><b>GREEN TEA RED BEAN</b> <span class="w3-tag w3-red w3-round">Hot!</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">RM 60.00</span></h1>
+        <center><img src="images/cake 2.png" width="210px" height="210px"></center>
+        </div>
+
+    <div id="TARTS & PUFF" class="w3-container menu w3-padding-32 w3-black">
+        
+        <h1><b>APPLE TART</b> <span class="w3-tag w3-red w3-round">Popular!</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">RM 11.00</span></h1>
+        <p class="w3-text-white">6 pcs</p>
+        <center><img src="images/tarts 5.jpg" width="210px" height="210px"></center>
+        
+        <hr>
+        <h1><b>MINI CHEESE TART</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM 6.00</span></h1>
+        <p class="w3-text-white">6 pcs</p>
+        <center><img src="images/tarts 2.jpg" width="210px" height="210px"></center>
+        
+        <hr>
+        <h1><b>CREAM PUFF</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM 6.00</span></h1>
+        <p class="w3-text-white">6 pcs</p>
+        <center><img src="images/tarts 3.jpg" width="210px" height="210px"></center>
+        
+        <hr>
+        <h1><b>STRAWBERRY COOKIES</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM 1.50</span></h1>
+        <p class="w3-text-white">2 pcs</p>
+        <center><img src="images/tarts 4.jpg" width="210px" height="210px"></center>
+        
+        <hr>
+        <h1><b>PEANUT BUTTER DORAYAKI</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM 3.50</span></h1>
+        <p class="w3-text-white">2 pcs</p>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">RM 3.50</span></h1>
+        <center><img src="images/tarts 1.jpg" width="210px" height="210px"></center>
+        </div>
+
+    <div id="BAKERY" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>SPECIAL DOUGHNUT</b> <span class="w3-tag w3-red w3-round">Seasonal!</span>
+        <p class="w3-text-white">6 pcs</p>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">RM 15.00</span></h1>
+        <center><img src="images/bakery 5.jpg" width="210px" height="210px"></center>
+        
+        <hr>
+        <h1><b>ALMOND CHEESE BUN</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM 2.50</span></h1>
+        <p class="w3-text-white">1 pcs</p>
+        <center><img src="images/bakery 1.jpg" width="210px" height="210px"></center>
+        
+        <hr>
+        <h1><b>CHICKEN BLACK PEPPER BUN</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM 2.50</span></h1>
+        <p class="w3-text-white">2 pcs</p>
+        <center><img src="images/bakery 2.jpg" width="210px" height="210px"></center>
+        
+        <hr>
+        <h1><b>SAUSAGE CHEESE BUN</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM 3.50</span></h1>
+        <p class="w3-text-white">2 pcs</p>
+        <center><img src="images/bakery 3.jpg" width="210px" height="210px"></center>
+        
+        <hr>
+        <h1><b>FLOWERY DRY FLAKES</b> <span class="w3-tag w3-red w3-round">Hot!</span>
+        <p class="w3-text-white">1 pcs</p>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">RM 3.00</span></h1>
+        <center><img src="images/bakery 4.jpg" width="210px" height="210px"></center>
+        </div>
+
+    
+
+<!-- Contact -->
+
+<div id="contact" class="w3-container w3-padding-64 w3-black w3-grayscale-min w3-xlarge"
+  class="w3-content">
+    <h1 class="w3-center w3-sand w3-round-xxlarge" style="margin-bottom:64px; font-size: 60px;">Contact</h1>
+    <center>
+    <img src="images/phone-removebg-preview.png" width="30px">019-926 8181</p>
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.198118975791!2d102.23822631476851!3d6.10400249558006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b6aff11d4b75a9%3A0x7f06d5cef5f4a18f!2sPrimula%20Bakery!5e0!3m2!1sen!2smy!4v1674539776081!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    <h1>Bandar Kota Bharu, 15150 Kota Bharu, Kelantan</h1> </center>
+</div>
+
+<!-- About Container -->
+
+<div id="about" class="w3-row w3-container w3-padding-64 w3-black w3-xlarge"
+   class="w3-content">
+  
+    <h1 class="w3-center w3-round-xxlarge w3-pale-red" style="margin-bottom:64px; font-size: 60px;">About</h1>
+    <center><img src="images/about us pic 1.jpg" style="width:200px" class="w3-round-xxlarge w3-grayscale-min"></center>
+    <center><p class="w3-center w3-bar-item w3-sand w3-xxlarge" style="width: fit-content;">Primula Bakery bertapak di Kelantan yang terletak di Bandar Kota Bharu.</p></center>
+    <center><p class="w3-center w3-bar-item w3-sand w3-xxlarge" style="width:fit-content;">Primula Bakery merupakan pembekal pelbagai jenis KEK dan ROTI.</p></center>
+    <center><p class="w3-center w3-bar-item w3-sand w3-xxlarge" style="width:fit-content;">100% Pengurusan orang Melayu Islam serta dijamin Halal dan bersih.</p></center> 
+    <p class="w3-center"><img src="images/about us pic.jpg" style="width:90%"></p>
+
+    <center><div class="w3-padding-large w3-round-xxlarge w3-grey" style="width: fit-content;">
+
+    <center><h1 class="w3-round-xxlarge w3-container w3-black w3-text-white " style="width:fit-content">Opening Hours</h1> </center>
+    
+    <div class="w3-row">
+      <div class="w3-center">
+        <p><span class="w3-tag w3-sand w3-xxlarge w3-greyscale-min w3-round">MONDAY - THURSDAY [8:00am- 10pm]</span></p>
+        <p><span class="w3-tag w3-sand w3-xxlarge w3-grayscale-min w3-round">FRIDAY [11:00am- 10pm]</span></p>
+        <p><span class="w3-tag w3-sand w3-xxlarge w3-grayscale-min w3-round">SATURDAY [8:00am- 10pm]</span></p>
+       </div>
+       </div>
+       </div>
+       </center><br>
+
+    <div class="w3-padding-large w3-round-xxlarge w3-light-grey">
+    <h1 class="w3-round-xxlarge w3-container w3-black w3-center w3-text-white" style="font-size:40px">OUR TEAM</h1><br>
+    <div class="w3-row-padding">
+   
+      <div class="w3-col l4 m6 w3-margin-bottom w3-center">
+      <img src="images/airin.png" alt="airin" style="width:100%">
+      <h3>NUR AIN AIRIN ASYIQIN BT ROSLAN</h3>
+      </div>
+    
+      <div class="w3-col l4 m6 w3-margin-bottom w3-center">
+      <img src="images/diyana.jpg" alt="Jane" style="width:100%">
+      <h3>NURUL DIYANA IWANI BT AZLAN</h3>
+      </div>
+      
+      <div class="w3-col l4 m6 w3-margin-bottom w3-center">
+      <img src="images/ema.jpg" alt="Mike" style="width:100%">
+      <h3>SITI NUR AQMAL BT AB SALIM</h3>
+      </div>
+      </div>
+      </div><br>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
